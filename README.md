@@ -157,10 +157,10 @@ Ipconfig
 
 ## Step 5: Ubuntu 24.04 Splunk Server Deployment
 VM Creation
-•	OS: Ubuntu Server 24.04 LTS
-•	Network: Lab_internal
-•	Memory: 4 GB
-•	Static IP assigned post-install
+- OS: Ubuntu Server 24.04 LTS
+- Network: Lab_internal
+- Memory: 4 GB
+- Static IP assigned post-install
 
 
 ### Failed Ubuntu IP a 
