@@ -128,7 +128,7 @@ Because the Hyper-V Internal switch is categorized as Public, Windows blocks inb
 
 
 ## Step 4: Windows Server 2022 Deployment (Active Directory)
-# VM Creation (Hyper-V)
+### VM Creation (Hyper-V)
 - Generation: 2
 - Memory: 4096 MB
 - Network: Lab_internal
@@ -137,16 +137,16 @@ Because the Hyper-V Internal switch is categorized as Public, Windows blocks inb
 After installation, the server was assigned a static IP.
 
 ## 4.5 Static IPv4 Configuration Windows Server (Domain Controller)
-Setting	Value
-IP Address	192.168.100.5
-Subnet Mask	255.255.255.0
-Default Gateway	(Blank – internal only)
-DNS Server	192.168.100.5 (Self)
-This configuration is critical because:
-•	A Domain Controller must point to itself for DNS.
-•	Active Directory relies entirely on DNS resolution.
-Verified with:
-Ipconfig
+### Setting	Value:
+- IP Address	192.168.100.5
+- Subnet Mask	255.255.255.0
+- Default Gateway	(Blank – internal only)
+- DNS Server	192.168.100.5 (Self)
+
+### This configuration is critical because:
+- A Domain Controller must point to itself for DNS.
+- Active Directory relies entirely on DNS resolution.
+
 <br />
 <br />
 <img width="974" height="627" alt="image" src="https://github.com/user-attachments/assets/8300c1de-2191-493c-879a-5af42309ac23" />
@@ -171,12 +171,11 @@ VM Creation
 <br />
  
 ### Initial Network Configuration
-Bringing the linux network online on network layer 2
-sudo ip link set eth0 up ”  since the Ubuntu VM network interface is not active.
-Then, configure the netplan file to set up static IPs
-Edited:
-/etc/netplan/*.yaml
-Configuration:
+Bringing the Linux network online on network layer 2:
+- " sudo ip link set eth0 up ”  since the Ubuntu VM network interface is not active.
+- Then, configure the netplan file to set up static IPs
+- Edit: /etc/netplan/*.yaml
+- Configuration:
 <br />
 <br />
 
